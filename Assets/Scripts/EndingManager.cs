@@ -19,6 +19,7 @@ public class EndingManager : MonoBehaviour
     public string[] m_Titles;
     public string[] m_Descriptions;
     public AudioClip[] m_EndingSongs;
+    private float m_Timer = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -33,22 +34,22 @@ public class EndingManager : MonoBehaviour
     {
         if(m_EndingCreated)
         {
-            LevelLoader g = GameObject.Find("LevelLoader").GetComponent<LevelLoader>();
+            m_Timer -= 1 * Time.deltaTime;
             if(Input.GetKeyDown(KeyCode.Escape))
             {
-              g.LoadLevel("Title");
+              UniversalManager.m_instance.LoadLevel("Title");
             }
-            else if(Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0) || UniversalManager.m_instance.m_SkipEnding == true)
+            else if(((Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0)) && m_Timer <= 0.0f) || UniversalManager.m_instance.m_SkipEnding == true)
             {
                 if(GameManager.m_instance.m_GameLost == true)
                 {
                     // Restart Level if lost
-                    g.LoadLevel("Game");
+                    UniversalManager.m_instance.LoadLevel("Game");
                 }
                 else
                 {
                     // Go back to title if you won.
-                    g.LoadLevel("Title");
+                    UniversalManager.m_instance.LoadLevel("Title");
                 }
             }
         }
@@ -58,7 +59,6 @@ public class EndingManager : MonoBehaviour
     {
       if(m_EndingCreated == false)
       {
-          Debug.Log("Created Ending " + id.ToString());
           GameManager.m_instance.m_DisableInput = true;
 
           m_ShownPicture.sprite = m_Pictures[id];

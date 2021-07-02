@@ -83,4 +83,10 @@ public class UniversalManager : MonoBehaviour
         m_AudioPlayer.clip = clip;
         m_AudioPlayer.Play();
     }
+
+    public void LoadLevel(string sceneName)
+    {
+        LevelLoader g = GameObject.Find("LevelLoader").GetComponent<LevelLoader>();
+        LoadLevel(sceneName);
+    }
 }
