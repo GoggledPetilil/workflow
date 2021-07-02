@@ -15,7 +15,7 @@ public class Boss : MonoBehaviour
     private float m_LookingTime = 3f; // Time Boss looks at you (Not effected by Aggression).
     private float m_Timer;
     private float m_TimeBonus; // Randomized bonus added to the phase time.
-    private bool m_Quiet;
+    private int m_Score = 25;
 
     [Header("Graphics")]
     public SpriteRenderer m_Sprite;
@@ -29,7 +29,6 @@ public class Boss : MonoBehaviour
     {
       m_Audio = GetComponent<AudioSource>();
       m_Audio.clip = m_Breathing;
-      m_Quiet = false;
     }
 
     // Start is called before the first frame update
@@ -70,8 +69,8 @@ public class Boss : MonoBehaviour
             {
               // Look Timer has passed,
               // Boss goes away again.
-              float multi = m_Aggression;
-              GameManager.m_instance.AdjustScore(175 * multi);
+              float multi = (1f + m_Aggression - m_Anger) / 2;
+              GameManager.m_instance.AdjustScore(m_Score * multi);
 
               GameManager.m_instance.m_BossDanger.SetActive(false);
 

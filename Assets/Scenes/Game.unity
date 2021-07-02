@@ -1362,7 +1362,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b87ce0c950dadb8c5afc2f57f5993bb2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8409fa864917ca80181f0596c80e55eb, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5853,7 +5853,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d313b61c0997b94e18f05f701c71b30b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eda0c6aa6dee721ca81d71f2425075e3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9391,57 +9391,68 @@ MonoBehaviour:
   m_TitleText: {fileID: 1647756792}
   m_DescriptionText: {fileID: 1909519500}
   m_Pictures:
-  - {fileID: 21300000, guid: d313b61c0997b94e18f05f701c71b30b, type: 3}
-  - {fileID: 21300000, guid: d313b61c0997b94e18f05f701c71b30b, type: 3}
-  - {fileID: 21300000, guid: d313b61c0997b94e18f05f701c71b30b, type: 3}
-  - {fileID: 21300000, guid: d313b61c0997b94e18f05f701c71b30b, type: 3}
-  - {fileID: 21300000, guid: d313b61c0997b94e18f05f701c71b30b, type: 3}
-  - {fileID: 21300000, guid: d313b61c0997b94e18f05f701c71b30b, type: 3}
-  - {fileID: 21300000, guid: d313b61c0997b94e18f05f701c71b30b, type: 3}
-  - {fileID: 21300000, guid: d313b61c0997b94e18f05f701c71b30b, type: 3}
-  - {fileID: 21300000, guid: d313b61c0997b94e18f05f701c71b30b, type: 3}
-  - {fileID: 21300000, guid: d313b61c0997b94e18f05f701c71b30b, type: 3}
+  - {fileID: 21300000, guid: eda0c6aa6dee721ca81d71f2425075e3, type: 3}
+  - {fileID: 21300000, guid: ea99c16426b2d0bf0a96b83c06cdffff, type: 3}
+  - {fileID: 21300000, guid: 3f26f40c4a8afe69ba61023aff0728a7, type: 3}
+  - {fileID: 21300000, guid: 6dedf3f20411f020188f9ea0d3aac8f0, type: 3}
+  - {fileID: 21300000, guid: cc842cdaa74f559f486784679f1c47f7, type: 3}
+  - {fileID: 21300000, guid: 6add161c6a7e02a278f30198293ac70e, type: 3}
+  - {fileID: 21300000, guid: d58298ac64fb99dac9cff7e99a687ebe, type: 3}
+  - {fileID: 21300000, guid: c62836c6dc33947ef9ac1e10c7a59e80, type: 3}
+  - {fileID: 21300000, guid: 47c049ed7f38b64ab884101e41bc6bb8, type: 3}
+  - {fileID: 21300000, guid: 8dbfc8d503d984fc09b26175e41eb065, type: 3}
+  - {fileID: 21300000, guid: fe9c9e8746a4096db97da29d8fc425b9, type: 3}
+  - {fileID: 21300000, guid: 9f70920291edc5b5083e4af1455426e2, type: 3}
   m_Titles:
   - GOOD ENDING
-  - HYPNO ENDING
+  - FAN ENDING
   - RESPONSIBILITY ENDING
-  - SUCK-UP ENDING
-  - NO FRIENDS ENDING
+  - GARBAGE ENDING
+  - LONELY ENDING
   - SACRIFICED ENDING
   - BETA ENDING
-  - FIRED ENDING
+  - BAD ENDING
   - ISEKAI ENDING
   - DEAD ENDING
+  - TRUE ENDING
+  - ULTIMATE ENDING
   m_Descriptions:
   - You skillfully managed to avoid doing tons of work!
   - You were hypnotied by the ceiling fan. You easily took over the world for our
     fan overlords. 20 years later, you met your end at the hands of The Resistance.
   - You remembered your uncle's words and decided to turn off your phone to focus
     on your job. You became employee of the month and got a lollipop as reward.
-  - your ass and threw you in a garbage truck.efriend your boss and get a raise.
-    Your boss kicked your ass and threw you in a garbage truck.
+  - You blocked all your friends and focused on befriending your boss to get on his
+    good side. He threw you in the garbage. You now live as the Trash Loser.
   - Despite your best efforts, you were too late in replying and your friends have
     started to ghost you. After a week, you lost all your friends.
   - You were hypnotized by the ceiling fan. Luckily, your boss noticed in time and
     vaporized you. The world is safe.
   - Your boss' sheer alpha energy caused you to piss yourself and everyone laughed
-    at you.
-  - You were fired for being a bad employee.
+    at you. You pretty much fired yourself, as a way to apologize.
+  - You were fired for being a bad employee. Your parents are disappointed in you.
+    Go find a new job.
   - Your boss saw that you broke the computer, so as punishment he sealed you inside
-    the computer. At least you got digital waifu?
+    the computer. At least you got digital waifu.
   - You were stupid and broke the computer. Since no one else noticed in time, the
     computer exploded and instantly killed you.
+  - You managed to put in the minimal amount of effort and still got the job done!
+    Your boss and client love your work! Congratulations!
+  - You are a master at working smart and got through everything without breaking
+    a sweat! Also you got a salary boost. You are a chad.
   m_EndingSongs:
-  - {fileID: 8300000, guid: 21e5e357acf02bbb3ae6920136b3437d, type: 3}
-  - {fileID: 8300000, guid: 88be6aa1cde1f4906a50876b39cefe4f, type: 3}
-  - {fileID: 8300000, guid: 687cccfec162e314dabd48db882bd59f, type: 3}
-  - {fileID: 8300000, guid: d23a839d82ff0f8a5a881ded8dc61d55, type: 3}
-  - {fileID: 8300000, guid: 48c8ce94e233ac662b90e043744176ae, type: 3}
-  - {fileID: 8300000, guid: 9512d7053c8ba9b75ab9b9026f352065, type: 3}
-  - {fileID: 8300000, guid: 538ad72e0abb347ec9e1767396fa7069, type: 3}
-  - {fileID: 8300000, guid: 32d22c7c6b526a0f981e1a4b67e16b66, type: 3}
-  - {fileID: 8300000, guid: 32d22c7c6b526a0f981e1a4b67e16b66, type: 3}
-  - {fileID: 8300000, guid: 32d22c7c6b526a0f981e1a4b67e16b66, type: 3}
+  - {fileID: 8300000, guid: a7a36f06c0d3a6b5b8b688f307bbee47, type: 3}
+  - {fileID: 8300000, guid: 78017b4a753d39e9da9b6bfab2437af3, type: 3}
+  - {fileID: 8300000, guid: d7a7a15af81b29fa5854c33d9215802d, type: 3}
+  - {fileID: 8300000, guid: e2beb4d5c16b29475932d4a590d6cf17, type: 3}
+  - {fileID: 8300000, guid: 85fda9a36681a2528bdbc249bc846e5c, type: 3}
+  - {fileID: 8300000, guid: 2f1b7e72a8f23a9c1bc92e20a659a2e6, type: 3}
+  - {fileID: 8300000, guid: 62a4ef2295199b9ceb6900670774f838, type: 3}
+  - {fileID: 8300000, guid: 38aece374b09f229fa85d41aaedfb433, type: 3}
+  - {fileID: 8300000, guid: 03f2a69235be6fc588852cdabedf59a5, type: 3}
+  - {fileID: 8300000, guid: c71d854720f7754adae7042ba0c2bf88, type: 3}
+  - {fileID: 8300000, guid: a7a36f06c0d3a6b5b8b688f307bbee47, type: 3}
+  - {fileID: 8300000, guid: 07828832d3e418321b2e2e93a0f82ef3, type: 3}
 --- !u!1 &2063315321
 GameObject:
   m_ObjectHideFlags: 0

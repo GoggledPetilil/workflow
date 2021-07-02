@@ -42,21 +42,14 @@ public class EndingManager : MonoBehaviour
             {
                 if(GameManager.m_instance.m_GameLost == true)
                 {
-                    // Restart Level
+                    // Restart Level if lost
+                    g.LoadLevel("Game");
                 }
                 else
                 {
-                    if(UniversalManager.m_instance.m_Day < 5)
-                    {
-                        UniversalManager.m_instance.m_Day++;
-                    }
-                    else
-                    {
-
-                      g.LoadLevel("Title");
-                    }
+                    // Go back to title if you won.
+                    g.LoadLevel("Title");
                 }
-                g.LoadLevel("Game");
             }
         }
     }

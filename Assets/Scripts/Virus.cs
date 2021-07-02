@@ -17,6 +17,7 @@ public class Virus : MonoBehaviour
     public float m_InstallProgress;
     public bool m_IsInstalling;
     private bool m_Success;
+    private int m_Score = 20;
 
     [Header("Sounds")]
     public AudioSource m_AudioSource;
@@ -78,7 +79,7 @@ public class Virus : MonoBehaviour
         ani.DisableThis();
 
         float multi = (1f + m_Aggression - m_InstallProgress) / 2;
-        GameManager.m_instance.AdjustScore(166 * multi);
+        GameManager.m_instance.AdjustScore(m_Score * multi);
 
         if(UniversalManager.m_instance.m_DangerIndication == true)
         {

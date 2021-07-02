@@ -29,7 +29,17 @@ public class Timer : MonoBehaviour
         m_t = 0;
         if(m_Hour >= 16)
         {
-            GameManager.m_instance.m_EndMan.CreateEnding(0);
+            UniversalManager um = UniversalManager.m_instance;
+            float a = um.m_FriendAActivity + um.m_FriendBActivity + um.m_FriendCActivity + um.m_BossAggression + um.m_VirusAggression;
+
+            if(a >= 5 && um.m_FanOn && um.m_MusicOn)
+            {
+                GameManager.m_instance.m_EndMan.CreateEnding(11);
+            }
+            else
+            {
+                GameManager.m_instance.m_EndMan.CreateEnding(0);
+            }
         }
       }
     }

@@ -26,6 +26,7 @@ public class Friend : MonoBehaviour
     private int m_RespondTime = 1; // Minimum time they take to respond in seconds
     public bool m_AreTyping;
     private float m_Timer;
+    private int m_Score = 35;
 
     // Start is called before the first frame update
     void Start()
@@ -114,7 +115,7 @@ public class Friend : MonoBehaviour
     public void ReceiveReply()
     {
       float multi = (m_Health + m_Active) / 2;
-      GameManager.m_instance.AdjustScore(200 * multi);
+      GameManager.m_instance.AdjustScore(m_Score * multi);
 
       m_Health = 1f;
       m_AreTyping = true;
