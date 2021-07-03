@@ -25,4 +25,9 @@ public class MainMenu : MonoBehaviour
         m_Description.text = text;
         m_HelpObject.SetActive(true);
     }
+
+    public void OpenURL(string urlLink)
+    {
+        Application.OpenURL(urlLink);
+    }
 }
