@@ -21,31 +21,35 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      m_t += 1 * Time.deltaTime;
-      if(m_t >= m_HourDuration && GameManager.m_instance.m_DisableInput == false)
-      {
-        m_Hour++;
-        UpdateHourDisplay();
-        m_t = 0;
-        if(m_Hour >= 16)
+        m_t += 1 * Time.deltaTime;
+        if(m_t >= m_HourDuration && GameManager.m_instance.m_DisableInput == false)
         {
-            UniversalManager um = UniversalManager.m_instance;
-            float a = um.m_FriendAActivity + um.m_FriendBActivity + um.m_FriendCActivity + um.m_BossAggression + um.m_VirusAggression;
+          m_Hour++;
+          UpdateHourDisplay();
+          m_t = 0;
+          if(m_Hour >= 16)
+          {
+              UniversalManager um = UniversalManager.m_instance;
+              float a = um.m_FriendAActivity + um.m_FriendBActivity + um.m_FriendCActivity + um.m_BossAggression + um.m_VirusAggression;
 
-            if(a >= 5 && um.m_FanOn && um.m_MusicOn)
-            {
-                GameManager.m_instance.m_EndMan.CreateEnding(11);
-            }
-            else
-            {
-                GameManager.m_instance.m_EndMan.CreateEnding(0);
-            }
+              if(a >= 5 && um.m_FanOn && um.m_MusicOn)
+              {
+                  GameManager.m_instance.m_EndMan.CreateEnding(11);
+              }
+              else
+              {
+                  GameManager.m_instance.m_EndMan.CreateEnding(0);
+              }
+          }
         }
-      }
     }
 
     void UpdateHourDisplay()
     {
-      m_TimerDisplay.text = m_Hour.ToString() + ":00";
+        m_TimerDisplay.text = m_Hour.ToString() + ":00";
+        if(GameManager.m_instance.m_UhOh)
+        {
+            Destroy(this);
+        }
     }
 }

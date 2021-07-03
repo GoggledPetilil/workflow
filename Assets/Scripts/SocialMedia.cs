@@ -80,8 +80,7 @@ public class SocialMedia : MonoBehaviour
       }
       else
       {
-          m_LockScreen.SetActive(true);
-          this.enabled = false;
+          LockScreen();
       }
     }
 
@@ -277,5 +276,14 @@ public class SocialMedia : MonoBehaviour
     {
         m_TypingSource.clip = m_TypingSFX;
         m_TypingSource.Play();
+    }
+
+    public void LockScreen()
+    {
+        A.enabled = false;
+        B.enabled = false;
+        C.enabled = false;
+        m_LockScreen.SetActive(true);
+        this.enabled = false;
     }
 }

@@ -37,19 +37,19 @@ public class EndingManager : MonoBehaviour
             m_Timer -= 1 * Time.deltaTime;
             if(Input.GetKeyDown(KeyCode.Escape))
             {
-              UniversalManager.m_instance.LoadLevel("Title");
+                GameManager.m_instance.LoadLevel("Title");
             }
             else if(((Input.GetKeyDown(KeyCode.Return) || Input.GetMouseButtonDown(0)) && m_Timer <= 0.0f) || UniversalManager.m_instance.m_SkipEnding == true)
             {
                 if(GameManager.m_instance.m_GameLost == true)
                 {
                     // Restart Level if lost
-                    UniversalManager.m_instance.LoadLevel("Game");
+                    GameManager.m_instance.LoadLevel("Game");
                 }
                 else
                 {
                     // Go back to title if you won.
-                    UniversalManager.m_instance.LoadLevel("Title");
+                    GameManager.m_instance.LoadLevel("Title");
                 }
             }
         }
@@ -68,6 +68,7 @@ public class EndingManager : MonoBehaviour
           m_EndingCreated = true;
           m_EndingHolder.SetActive(true);
           GameManager.m_instance.ChangeBGM(m_EndingSongs[id]);
+          GameManager.m_instance.MuteAmbience();
 
           if(id == 0)
           {

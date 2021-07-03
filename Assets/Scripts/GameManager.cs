@@ -29,9 +29,13 @@ public class GameManager : MonoBehaviour
     [Header("Game Elements")]
     public bool m_GameLost;
     public bool m_ComputerBroke;
+    public bool m_UhOh;
     public SocialMedia m_Social;
     public int m_WordReq;
     public int m_Score;
+    public AudioSource m_Ambience;
+    public AudioSource m_Fan;
+    public AudioSource m_Crowd;
 
     void Awake()
     {
@@ -54,12 +58,15 @@ public class GameManager : MonoBehaviour
 
     public void PauseGame(bool state)
     {
-        m_DisableInput = state;
-        m_FreezeGame = state;
+        if(!m_UhOh)
+        {
+            m_DisableInput = state;
+            m_FreezeGame = state;
 
-        m_PauseMenu.SetActive(state);
+            m_PauseMenu.SetActive(state);
 
-        AudioListener.pause = state;
+            AudioListener.pause = state;
+        }
     }
 
     public void ToggleTimeDisplay(bool state)
@@ -150,5 +157,17 @@ public class GameManager : MonoBehaviour
     {
         m_Score += Mathf.RoundToInt(addition) * 10;
         m_ScoreText.text = "Score: " + m_Score.ToString();
+    }
+
+    public void MuteAmbience()
+    {
+        m_Ambience.volume = 0.0f;
+        m_Fan.volume = 0.0f;
+        m_Crowd.volume = 0.0f;
+    }
+
+    public void LoadLevel(string sceneName)
+    {
+        LoadLevel(sceneName);
     }
 }
