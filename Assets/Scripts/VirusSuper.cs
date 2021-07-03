@@ -24,12 +24,9 @@ public class VirusSuper : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        UniversalManager um = UniversalManager.m_instance;
-        float d = um.m_FriendAActivity + um.m_FriendBActivity + um.m_FriendCActivity + um.m_BossAggression + um.m_VirusAggression;
-
         int r = Random.Range(0, 1000);
 
-        if((um.m_MusicOn == false && d <= 0.0) || r == 0)
+        if(r == 0)
         {
             // Bad Stuff
             GameManager.m_instance.m_Social.LockScreen();

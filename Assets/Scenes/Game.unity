@@ -1414,7 +1414,7 @@ RectTransform:
   m_GameObject: {fileID: 364439209}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.01, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1762281901}
   m_RootOrder: 1
@@ -9716,7 +9716,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c62836c6dc33947ef9ac1e10c7a59e80, type: 3}
   - {fileID: 21300000, guid: 47c049ed7f38b64ab884101e41bc6bb8, type: 3}
   - {fileID: 21300000, guid: 8dbfc8d503d984fc09b26175e41eb065, type: 3}
-  - {fileID: 21300000, guid: fe9c9e8746a4096db97da29d8fc425b9, type: 3}
+  - {fileID: 21300000, guid: eda0c6aa6dee721ca81d71f2425075e3, type: 3}
   - {fileID: 21300000, guid: 9f70920291edc5b5083e4af1455426e2, type: 3}
   m_Titles:
   - GOOD ENDING
@@ -9729,10 +9729,10 @@ MonoBehaviour:
   - BAD ENDING
   - ISEKAI ENDING
   - DEAD ENDING
-  - TRUE ENDING
+  - GOOD ENDING?
   - ULTIMATE ENDING
   m_Descriptions:
-  - You skillfully managed to avoid doing tons of work!
+  - You skillfully managed to avoid doing tons of work today!
   - You were hypnotied by the ceiling fan. You easily took over the world for our
     fan overlords. 20 years later, you met your end at the hands of The Resistance.
   - You remembered your uncle's words and decided to turn off your phone to focus
@@ -9743,16 +9743,16 @@ MonoBehaviour:
     started to ghost you. After a week, you lost all your friends.
   - You were hypnotized by the ceiling fan. Luckily, your boss noticed in time and
     vaporized you. The world is safe.
-  - Your boss' sheer alpha energy caused you to piss yourself and everyone laughed
-    at you. You pretty much fired yourself, as a way to apologize.
+  - Your boss' sheer alpha energy intimidated you so much that you just ended up
+    firing yourself as a way to apologize.
   - You were fired for being a bad employee. Your parents are disappointed in you.
     Go find a new job.
   - Your boss saw that you broke the computer, so as punishment he sealed you inside
     the computer. At least you got digital waifu.
   - You were stupid and broke the computer. Since no one else noticed in time, the
     computer exploded and instantly killed you.
-  - You managed to put in the minimal amount of effort and still got the job done!
-    Your boss and client love your work! Congratulations!
+  - What are you even doing here?? Go back home, you literally had a free day today!
+    Congrats, I guess??
   - You are a master at working smart and got through everything without breaking
     a sweat! Also you got a salary boost. You are a chad.
   m_EndingSongs:

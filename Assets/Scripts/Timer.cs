@@ -36,6 +36,10 @@ public class Timer : MonoBehaviour
               {
                   GameManager.m_instance.m_EndMan.CreateEnding(11);
               }
+              else if(a <= 0.0 && !um.m_MusicOn)
+              {
+                  GameManager.m_instance.m_EndMan.CreateEnding(10);
+              }
               else
               {
                   GameManager.m_instance.m_EndMan.CreateEnding(0);

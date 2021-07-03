@@ -168,6 +168,6 @@ public class GameManager : MonoBehaviour
 
     public void LoadLevel(string sceneName)
     {
-        LoadLevel(sceneName);
+        m_LevelLoader.LoadLevel(sceneName);
     }
 }
