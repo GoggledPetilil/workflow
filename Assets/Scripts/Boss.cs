@@ -78,7 +78,7 @@ public class Boss : MonoBehaviour
               m_Anger = 0.0f;
               UpdatePhase();
             }
-            else if(m_Anger >= 1f && GameManager.m_instance.m_GameLost == false)
+            else if((m_Anger >= 1f || GameManager.m_instance.m_ComputerBroke) && GameManager.m_instance.m_GameLost == false)
             {
                 // Player is dead as hell
                 KillsPlayer();
