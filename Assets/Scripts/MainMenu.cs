@@ -14,6 +14,15 @@ public class MainMenu : MonoBehaviour
         AudioListener.pause = false;
     }
 
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+            Debug.Log("Application has quit.");
+        }
+    }
+
     public void StartGame()
     {
         LevelLoader g = GameObject.Find("LevelLoader").GetComponent<LevelLoader>();

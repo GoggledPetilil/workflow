@@ -60,6 +60,7 @@ public class EndingManager : MonoBehaviour
       if(m_EndingCreated == false)
       {
           GameManager.m_instance.m_DisableInput = true;
+          GameManager.m_instance.m_FreezeGame = true;
 
           m_ShownPicture.sprite = m_Pictures[id];
           m_TitleText.text = m_Titles[id];

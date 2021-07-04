@@ -144,21 +144,21 @@ public class SocialMedia : MonoBehaviour
       {
         case(0):
           m_DMing = Contacts.FriendA;
-          m_ContactName.text = "@" + A.m_Name;
+          m_ContactName.text = "@" + A.m_Username;
           m_TextField.text = A.m_InputText;
           AdjustFillImage(A.m_WordCount);
           HideAllDMs();
           break;
         case(1):
           m_DMing = Contacts.FriendB;
-          m_ContactName.text = "@" + B.m_Name;
+          m_ContactName.text = "@" + B.m_Username;
           m_TextField.text = B.m_InputText;
           AdjustFillImage(B.m_WordCount);
           HideAllDMs();
           break;
         case(2):
           m_DMing = Contacts.FriendC;
-          m_ContactName.text = "@" + C.m_Name;
+          m_ContactName.text = "@" + C.m_Username;
           m_TextField.text = C.m_InputText;
           AdjustFillImage(C.m_WordCount);
           HideAllDMs();

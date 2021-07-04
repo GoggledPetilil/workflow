@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Friend : MonoBehaviour
 {
     [Header("UI")]
-    public string m_Name;
+    public string m_Username;
     public Sprite m_Icon;
     public int m_ID;
     public Image m_Fill;

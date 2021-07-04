@@ -14,8 +14,6 @@ public class VirusSuper : MonoBehaviour
     private float m_WaitTime = 12;
     private bool m_HasSpawned;
     private bool m_Staaaare;
-    private int m_ScreenFlashes = 6;
-    private float m_TransTime = 0.5f;
 
     [Header("Sounds")]
     public AudioSource m_AudioSource;
